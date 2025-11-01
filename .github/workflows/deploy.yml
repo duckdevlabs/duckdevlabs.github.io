@@ -58,6 +58,11 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -70,6 +75,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
+          cache: "npm"
 
       - name: Install dependencies
         run: npm ci
@@ -77,11 +83,22 @@ jobs:
       - name: Build site
         run: npm run build
 
-      # - name: Copy 404.html for SPA routing
-      #   run: cp dist/index.html dist/404.html
+      - name: Verify build output
+        run: |
+          echo "Build output:"
+          ls -la dist/
+          echo "Assets:"
+          ls -la dist/assets/ || echo "No assets folder"
+          echo "Files in dist:"
+          find dist -type f | head -20
+
+      - name: Copy 404.html for SPA routing
+        run: cp dist/index.html dist/404.html
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+          cname: duckdevlabs.com
+          keep_files: false
