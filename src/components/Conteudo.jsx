@@ -24,7 +24,7 @@ function Conteudo({ onScroll, openVideo }) {
           ))}
         </div>
         <div className="cta-box">
-          <a className="btn btn--ghost" href="https://youtube.com" target="_blank" rel="noopener">Ir para o canal</a>
+          <a className="btn btn--ghost" href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">Ir para o canal</a>
         </div>
       </div>
     </section>
