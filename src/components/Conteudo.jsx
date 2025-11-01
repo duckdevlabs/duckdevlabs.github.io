@@ -1,6 +1,6 @@
 function Conteudo({ onScroll, openVideo }) {
   const videos = [
-    { id: 'dQw4w9WgXcQ', title: 'Arquitetura Flutter na prática' },
+    { id: 'dQw4w9WgXcQ', title: 'Arquitetura Flutter na prática!' },
     { id: 'M7lc1UVf-VE', title: 'CI/CD para apps móveis' },
     { id: 'aqz-KE-bpKQ', title: 'Rust + Flutter com FFI' },
   ]
@@ -12,10 +12,10 @@ function Conteudo({ onScroll, openVideo }) {
         <p className="section-lead">Vídeos, lives e artigos sobre engenharia de software, carreira e bastidores de projetos reais.</p>
         <div className="video-grid" role="list">
           {videos.map((video, index) => (
-            <button 
+            <button
               key={video.id}
-              className="video-card" 
-              role="listitem" 
+              className="video-card"
+              role="listitem"
               onClick={() => openVideo(video.id)}
               aria-label={`Assistir vídeo ${index + 1}`}
             >
