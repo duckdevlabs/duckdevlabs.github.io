@@ -2,25 +2,43 @@
 
 Site oficial do DuckDevLabs construído com React e Vite.
 
-## 🚀 Desenvolvimento
+## 🚀 Desenvolvimento Local
+
+### Pré-requisitos
+
+- Node.js 18+ (recomendado: v20+)
+- npm ou yarn
+
+### Setup Inicial
 
 ```bash
-# Instalar dependências
+# 1. Instalar dependências
 npm install
 
-# Executar em modo desenvolvimento
+# 2. Executar em modo desenvolvimento
+npm run dev
+```
+
+O servidor iniciará automaticamente em **<http://localhost:5173>**
+
+### Comandos Disponíveis
+
+```bash
+# Desenvolvimento (hot reload ativado)
 npm run dev
 
 # Build para produção
 npm run build
 
-# Preview do build de produção
+# Preview do build de produção localmente
 npm run preview
 ```
 
+> 💡 **Dica**: O Vite usa Hot Module Replacement (HMR), então as alterações no código são refletidas instantaneamente no navegador sem precisar recarregar a página.
+
 ## 📁 Estrutura do Projeto
 
-```
+```md
 duckdevlabs.github.io/
 ├── public/          # Arquivos estáticos (assets, CNAME)
 ├── src/
@@ -44,4 +62,3 @@ duckdevlabs.github.io/
 O site está configurado para GitHub Pages. Após o build, os arquivos serão gerados na pasta `dist/`.
 
 O arquivo `CNAME` já está configurado para `duckdevlabs.com`.
-
