@@ -1,10 +1,14 @@
+import { useTranslation } from 'react-i18next'
+
 function Contato() {
+  const { t } = useTranslation()
+
   return (
     <section id="contato" className="section section--alt">
       <div className="container grid-2">
         <div>
-          <h2>Vamos criar algo juntos?</h2>
-          <p>Conte um pouco do seu projeto e retornamos com um plano direto e prático.</p>
+          <h2>{t('contact.title')}</h2>
+          <p>{t('contact.description')}</p>
           <ul className="socials">
             <li><a href="mailto:hello@duckdevlabs.dev">hello@duckdevlabs.dev</a></li>
             <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
@@ -13,8 +17,8 @@ function Contato() {
           </ul>
         </div>
         <div className="card card--retro">
-          <h3>Manifesto rápido</h3>
-          <p>Menos buzzword, mais entrega. Código limpo, testes e observabilidade. Conteúdo honesto que ajuda devs a crescer na prática.</p>
+          <h3>{t('contact.manifestoTitle')}</h3>
+          <p>{t('contact.manifesto')}</p>
         </div>
       </div>
     </section>
@@ -22,4 +26,3 @@ function Contato() {
 }
 
 export default Contato
-

@@ -1,21 +1,24 @@
+import { useTranslation } from 'react-i18next'
+
 function Hero({ onScroll }) {
+  const { t } = useTranslation()
+
   return (
-    <section className="hero" aria-label="Introdução">
+    <section className="hero" aria-label={t('hero.ariaLabel')}>
       <div className="hero__bg">
         <img src="/assets/duckdev-banner.jpeg" alt="" aria-hidden="true" />
       </div>
       <div className="hero__content">
-        <h1>Software bem feito. Conteúdo sem enrolação.</h1>
-        <p>Construímos produtos digitais e compartilhamos o processo: vídeos, artigos e meetups sobre programação, hardware e o lifestyle de quem vive do código.</p>
+        <h1>{t('hero.title')}</h1>
+        <p>{t('hero.description')}</p>
         <div className="hero__ctas">
-          <a className="btn btn--primary" href="#servicos" onClick={(e) => onScroll(e, '#servicos')}>Construir produto</a>
-          <a className="btn btn--ghost" href="#conteudo" onClick={(e) => onScroll(e, '#conteudo')}>Assistir conteúdo</a>
+          <a className="btn btn--primary" href="#servicos" onClick={(e) => onScroll(e, '#servicos')}>{t('hero.ctaPrimary')}</a>
+          <a className="btn btn--ghost" href="#conteudo" onClick={(e) => onScroll(e, '#conteudo')}>{t('hero.ctaGhost')}</a>
         </div>
       </div>
-      <div className="hero__badge">8‑bit vibes</div>
+      <div className="hero__badge">{t('hero.badge')}</div>
     </section>
   )
 }
 
 export default Hero
-

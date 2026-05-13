@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Sobre from './components/Sobre'
@@ -11,8 +12,14 @@ import Footer from './components/Footer'
 import VideoModal from './components/VideoModal'
 
 function App() {
+  const { i18n } = useTranslation()
   const [isNavOpen, setIsNavOpen] = useState(false)
   const [selectedVideo, setSelectedVideo] = useState(null)
+
+  useEffect(() => {
+    const lang = i18n.language?.startsWith('pt') ? 'pt-br' : 'en'
+    document.documentElement.lang = lang
+  }, [i18n.language])
 
   const handleScroll = (e, targetId) => {
     e.preventDefault()

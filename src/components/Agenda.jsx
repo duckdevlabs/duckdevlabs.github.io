@@ -1,22 +1,23 @@
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 function Agenda() {
+  const { t } = useTranslation()
   const [email, setEmail] = useState('')
   const [status, setStatus] = useState('')
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const topics = t('agenda.topics', { returnObjects: true })
 
   const handleSubmit = async (e) => {
     e.preventDefault()
     setIsSubmitting(true)
 
-    // Simula um delay de API
     await new Promise(resolve => setTimeout(resolve, 500))
 
-    setStatus('Obrigado! Em breve enviaremos novidades.')
+    setStatus(t('agenda.success'))
     setEmail('')
     setIsSubmitting(false)
 
-    // Limpar mensagem após 5 segundos
     setTimeout(() => setStatus(''), 5000)
   }
 
@@ -24,14 +25,14 @@ function Agenda() {
     <section id="agenda" className="section section--alt">
       <div className="container grid-2">
         <div>
-          <h2>Agenda de Meetups</h2>
-          <p>Organizamos encontros técnicos com talks, demos e networking. Cadastre‑se para receber a próxima data.</p>
+          <h2>{t('agenda.title')}</h2>
+          <p>{t('agenda.description')}</p>
           <form id="newsletter" className="form" onSubmit={handleSubmit}>
-            <label className="sr-only" htmlFor="email">Seu e-mail</label>
+            <label className="sr-only" htmlFor="email">{t('agenda.emailLabel')}</label>
             <input
               id="email"
               type="email"
-              placeholder="seu@email.com"
+              placeholder={t('agenda.emailPlaceholder')}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
@@ -42,7 +43,7 @@ function Agenda() {
               disabled={isSubmitting}
               aria-busy={isSubmitting}
             >
-              {isSubmitting ? 'Enviando...' : 'Quero participar'}
+              {isSubmitting ? t('agenda.submitting') : t('agenda.submit')}
             </button>
             {status && (
               <small className="muted" id="form-status" role="status" aria-live="polite">{status}</small>
@@ -50,11 +51,11 @@ function Agenda() {
           </form>
         </div>
         <div className="card card--retro">
-          <h3>Próximos temas</h3>
+          <h3>{t('agenda.topicsTitle')}</h3>
           <ul className="bullets">
-            <li>Micro‑frontends no mobile</li>
-            <li>Observabilidade simples e efetiva</li>
-            <li>Performance: do profiler à pull request</li>
+            {topics.map((topic, i) => (
+              <li key={i}>{topic}</li>
+            ))}
           </ul>
         </div>
       </div>
@@ -63,4 +64,3 @@ function Agenda() {
 }
 
 export default Agenda
-

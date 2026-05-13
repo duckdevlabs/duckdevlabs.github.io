@@ -1,0 +1,118 @@
+{
+  "header": {
+    "home": "DuckDevLabs Home",
+    "logoAlt": "Logotipo do DuckDevLabs — pato pixel art com laptop",
+    "closeMenu": "Fechar menu",
+    "openMenu": "Abrir menu",
+    "nav": {
+      "about": "Sobre",
+      "software": "Software",
+      "content": "Conteúdo",
+      "meetups": "Meetups",
+      "setups": "Setups",
+      "contact": "Contato"
+    }
+  },
+  "hero": {
+    "ariaLabel": "Introdução",
+    "title": "Software bem feito. Conteúdo sem enrolação.",
+    "description": "Construímos produtos digitais e compartilhamos o processo: vídeos, artigos e meetups sobre programação, hardware e o lifestyle de quem vive do código.",
+    "ctaPrimary": "Construir produto",
+    "ctaGhost": "Assistir conteúdo",
+    "badge": "8‑bit vibes"
+  },
+  "about": {
+    "title": "Quem somos",
+    "description": "Somos um estúdio de engenharia focado em <strong>software de alta qualidade</strong> e em <strong>educação técnica</strong>. Nosso diferencial é unir prática de mercado (arquitetura, DevOps, mobile, backend) com uma comunicação direta, acessível e divertida.",
+    "bullets": [
+      "Arquiteturas modernas (Flutter, Rust, Node, Docker, PostgreSQL).",
+      "Conteúdo técnico no YouTube e meetups presenciais/online.",
+      "Reviews de hardware, periféricos e otimização de setup."
+    ],
+    "stackTitle": "Nossa stack favorita",
+    "stackNote": "Mas a melhor stack é a que resolve o seu problema com clareza e performance."
+  },
+  "services": {
+    "title": "Software & Serviços",
+    "cards": [
+      {
+        "title": "Produtos de ponta a ponta",
+        "description": "Descoberta, arquitetura, desenvolvimento e publicação. Mobile, web e backend com observabilidade e CI/CD."
+      },
+      {
+        "title": "Consultoria técnica",
+        "description": "Modularização, micro‑frontends no mobile, performance, pipelines, segurança e revisão de arquitetura."
+      },
+      {
+        "title": "Workshops & treinamentos",
+        "description": "Mãos‑na‑massa para times: Flutter avançado, DevOps prático, testes, clean architecture e mais."
+      }
+    ],
+    "cta": "Fale com a gente",
+    "note": "Projetos por escopo e pacotes sob demanda."
+  },
+  "content": {
+    "title": "Conteúdo Tech",
+    "lead": "Vídeos, lives e artigos sobre engenharia de software, carreira e bastidores de projetos reais.",
+    "watchVideo": "Assistir vídeo {{n}}",
+    "videos": [
+      "Arquitetura Flutter na prática!",
+      "CI/CD para apps móveis",
+      "Rust + Flutter com FFI"
+    ],
+    "cta": "Ir para o canal"
+  },
+  "agenda": {
+    "title": "Agenda de Meetups",
+    "description": "Organizamos encontros técnicos com talks, demos e networking. Cadastre‑se para receber a próxima data.",
+    "emailLabel": "Seu e-mail",
+    "emailPlaceholder": "seu@email.com",
+    "submitting": "Enviando...",
+    "submit": "Quero participar",
+    "success": "Obrigado! Em breve enviaremos novidades.",
+    "topicsTitle": "Próximos temas",
+    "topics": [
+      "Micro‑frontends no mobile",
+      "Observabilidade simples e efetiva",
+      "Performance: do profiler à pull request"
+    ]
+  },
+  "setup": {
+    "title": "Setups & Hardware",
+    "lead": "Reviews, ergonomia e produtividade real: monitores, teclados, áudio e configs.",
+    "cards": [
+      {
+        "title": "Guia de periféricos",
+        "description": "Do teclado ao microfone: o que realmente impacta seu dia a dia de dev."
+      },
+      {
+        "title": "Workstations",
+        "description": "Builds otimizados para compilações pesadas, VMs e IA leve."
+      },
+      {
+        "title": "Setup tour",
+        "description": "Aprenda com setups reais da comunidade e do estúdio."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Vamos criar algo juntos?",
+    "description": "Conte um pouco do seu projeto e retornamos com um plano direto e prático.",
+    "manifestoTitle": "Manifesto rápido",
+    "manifesto": "Menos buzzword, mais entrega. Código limpo, testes e observabilidade. Conteúdo honesto que ajuda devs a crescer na prática."
+  },
+  "footer": {
+    "copy": "© {{year}} DuckDevLabs. Feito com ☕ + código."
+  },
+  "videoModal": {
+    "playerLabel": "Player do YouTube",
+    "closeLabel": "Fechar vídeo",
+    "iframeTitle": "Player de vídeo do YouTube"
+  },
+  "error": {
+    "title": "Ops! Algo deu errado",
+    "message": "Ocorreu um erro ao carregar o site.",
+    "reload": "Recarregar Página",
+    "details": "Detalhes do erro"
+  }
+}

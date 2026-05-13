@@ -1,0 +1,118 @@
+{
+  "header": {
+    "home": "DuckDevLabs Home",
+    "logoAlt": "DuckDevLabs logo — pixel art duck with laptop",
+    "closeMenu": "Close menu",
+    "openMenu": "Open menu",
+    "nav": {
+      "about": "About",
+      "software": "Software",
+      "content": "Content",
+      "meetups": "Meetups",
+      "setups": "Setups",
+      "contact": "Contact"
+    }
+  },
+  "hero": {
+    "ariaLabel": "Introduction",
+    "title": "Well-crafted software. No-fluff content.",
+    "description": "We build digital products and share the process: videos, articles, and meetups about programming, hardware, and the code-driven lifestyle.",
+    "ctaPrimary": "Build a product",
+    "ctaGhost": "Watch content",
+    "badge": "8‑bit vibes"
+  },
+  "about": {
+    "title": "Who we are",
+    "description": "We're an engineering studio focused on <strong>high-quality software</strong> and <strong>technical education</strong>. We stand out by combining real-world practice (architecture, DevOps, mobile, backend) with direct, accessible, and fun communication.",
+    "bullets": [
+      "Modern architectures (Flutter, Rust, Node, Docker, PostgreSQL).",
+      "Technical content on YouTube and in-person/online meetups.",
+      "Hardware reviews, peripherals, and setup optimization."
+    ],
+    "stackTitle": "Our favorite stack",
+    "stackNote": "But the best stack is the one that solves your problem with clarity and performance."
+  },
+  "services": {
+    "title": "Software & Services",
+    "cards": [
+      {
+        "title": "End-to-end products",
+        "description": "Discovery, architecture, development, and deployment. Mobile, web, and backend with observability and CI/CD."
+      },
+      {
+        "title": "Technical consulting",
+        "description": "Modularization, mobile micro-frontends, performance, pipelines, security, and architecture review."
+      },
+      {
+        "title": "Workshops & training",
+        "description": "Hands-on for teams: advanced Flutter, practical DevOps, testing, clean architecture, and more."
+      }
+    ],
+    "cta": "Get in touch",
+    "note": "Scoped projects and on-demand packages."
+  },
+  "content": {
+    "title": "Tech Content",
+    "lead": "Videos, livestreams, and articles about software engineering, careers, and behind-the-scenes of real projects.",
+    "watchVideo": "Watch video {{n}}",
+    "videos": [
+      "Flutter Architecture in practice!",
+      "CI/CD for mobile apps",
+      "Rust + Flutter with FFI"
+    ],
+    "cta": "Go to channel"
+  },
+  "agenda": {
+    "title": "Meetup Schedule",
+    "description": "We organize technical meetups with talks, demos, and networking. Sign up to receive the next date.",
+    "emailLabel": "Your email",
+    "emailPlaceholder": "you@email.com",
+    "submitting": "Sending...",
+    "submit": "I want to join",
+    "success": "Thank you! We'll send you updates soon.",
+    "topicsTitle": "Upcoming topics",
+    "topics": [
+      "Mobile micro-frontends",
+      "Simple and effective observability",
+      "Performance: from profiler to pull request"
+    ]
+  },
+  "setup": {
+    "title": "Setups & Hardware",
+    "lead": "Reviews, ergonomics, and real productivity: monitors, keyboards, audio, and configs.",
+    "cards": [
+      {
+        "title": "Peripherals guide",
+        "description": "From keyboard to microphone: what truly impacts your daily dev life."
+      },
+      {
+        "title": "Workstations",
+        "description": "Optimized builds for heavy compilations, VMs, and lightweight AI."
+      },
+      {
+        "title": "Setup tour",
+        "description": "Learn from real community and studio setups."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Let's build something together?",
+    "description": "Tell us a bit about your project and we'll get back with a direct, practical plan.",
+    "manifestoTitle": "Quick manifesto",
+    "manifesto": "Less buzzwords, more delivery. Clean code, tests, and observability. Honest content that helps devs grow in practice."
+  },
+  "footer": {
+    "copy": "© {{year}} DuckDevLabs. Made with ☕ + code."
+  },
+  "videoModal": {
+    "playerLabel": "YouTube Player",
+    "closeLabel": "Close video",
+    "iframeTitle": "YouTube video player"
+  },
+  "error": {
+    "title": "Oops! Something went wrong",
+    "message": "An error occurred while loading the site.",
+    "reload": "Reload Page",
+    "details": "Error details"
+  }
+}

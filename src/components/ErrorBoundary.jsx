@@ -1,4 +1,5 @@
 import React from 'react'
+import i18n from '../i18n'
 
 class ErrorBoundary extends React.Component {
   constructor(props) {
@@ -16,6 +17,7 @@ class ErrorBoundary extends React.Component {
 
   render() {
     if (this.state.hasError) {
+      const t = i18n.t.bind(i18n)
       return (
         <div style={{
           padding: '40px',
@@ -29,9 +31,9 @@ class ErrorBoundary extends React.Component {
           alignItems: 'center',
           background: '#0f1012'
         }}>
-          <h1 style={{ color: '#f5b000', marginBottom: '20px' }}>Ops! Algo deu errado</h1>
+          <h1 style={{ color: '#f5b000', marginBottom: '20px' }}>{t('error.title')}</h1>
           <p style={{ marginBottom: '20px', color: '#a6adbb' }}>
-            Ocorreu um erro ao carregar o site.
+            {t('error.message')}
           </p>
           <button
             onClick={() => window.location.reload()}
@@ -45,11 +47,11 @@ class ErrorBoundary extends React.Component {
               fontWeight: 'bold'
             }}
           >
-            Recarregar Página
+            {t('error.reload')}
           </button>
           {process.env.NODE_ENV === 'development' && (
             <details style={{ marginTop: '20px', textAlign: 'left', maxWidth: '600px' }}>
-              <summary style={{ cursor: 'pointer', color: '#a6adbb' }}>Detalhes do erro</summary>
+              <summary style={{ cursor: 'pointer', color: '#a6adbb' }}>{t('error.details')}</summary>
               <pre style={{
                 background: '#1a1c21',
                 padding: '15px',
@@ -71,4 +73,3 @@ class ErrorBoundary extends React.Component {
 }
 
 export default ErrorBoundary
-
