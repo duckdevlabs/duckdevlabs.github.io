@@ -75,7 +75,7 @@ function Header({ isNavOpen, setIsNavOpen, onScroll }) {
       <nav ref={navRef} id="site-nav" className={`site-nav ${isNavOpen ? 'open' : ''}`}>
         <a href="#sobre" onClick={(e) => handleNavClick(e, '#sobre')}>{t('header.nav.about')}</a>
         <a href="#servicos" onClick={(e) => handleNavClick(e, '#servicos')}>{t('header.nav.software')}</a>
-        <a href="#conteudo" onClick={(e) => handleNavClick(e, '#conteudo')}>{t('header.nav.content')}</a>
+        {/* <a href="#conteudo" onClick={(e) => handleNavClick(e, '#conteudo')}>{t('header.nav.content')}</a> */}
         <a href="#agenda" onClick={(e) => handleNavClick(e, '#agenda')}>{t('header.nav.meetups')}</a>
         <a href="#setup" onClick={(e) => handleNavClick(e, '#setup')}>{t('header.nav.setups')}</a>
         <a href="#contato" onClick={(e) => handleNavClick(e, '#contato')}>{t('header.nav.contact')}</a>

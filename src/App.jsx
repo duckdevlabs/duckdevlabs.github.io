@@ -4,17 +4,17 @@ import Header from './components/Header'
 import Hero from './components/Hero'
 import Sobre from './components/Sobre'
 import Servicos from './components/Servicos'
-import Conteudo from './components/Conteudo'
+// import Conteudo from './components/Conteudo'
 import Agenda from './components/Agenda'
 import Setup from './components/Setup'
 import Contato from './components/Contato'
 import Footer from './components/Footer'
-import VideoModal from './components/VideoModal'
+// import VideoModal from './components/VideoModal'
 
 function App() {
   const { i18n } = useTranslation()
   const [isNavOpen, setIsNavOpen] = useState(false)
-  const [selectedVideo, setSelectedVideo] = useState(null)
+  // const [selectedVideo, setSelectedVideo] = useState(null)
 
   useEffect(() => {
     const lang = i18n.language?.startsWith('pt') ? 'pt-br' : 'en'
@@ -30,13 +30,13 @@ function App() {
     }
   }
 
-  const openVideo = (videoId) => {
-    setSelectedVideo(videoId)
-  }
+  // const openVideo = (videoId) => {
+  //   setSelectedVideo(videoId)
+  // }
 
-  const closeVideo = () => {
-    setSelectedVideo(null)
-  }
+  // const closeVideo = () => {
+  //   setSelectedVideo(null)
+  // }
 
   return (
     <>
@@ -45,13 +45,13 @@ function App() {
         <Hero onScroll={handleScroll} />
         <Sobre />
         <Servicos onScroll={handleScroll} />
-        <Conteudo onScroll={handleScroll} openVideo={openVideo} />
+        {/* <Conteudo onScroll={handleScroll} openVideo={openVideo} /> */}
         <Agenda />
         <Setup />
         <Contato />
       </main>
       <Footer />
-      <VideoModal videoId={selectedVideo} onClose={closeVideo} />
+      {/* <VideoModal videoId={selectedVideo} onClose={closeVideo} /> */}
     </>
   )
 }

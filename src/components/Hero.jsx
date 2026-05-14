@@ -13,7 +13,7 @@ function Hero({ onScroll }) {
         <p>{t('hero.description')}</p>
         <div className="hero__ctas">
           <a className="btn btn--primary" href="#servicos" onClick={(e) => onScroll(e, '#servicos')}>{t('hero.ctaPrimary')}</a>
-          <a className="btn btn--ghost" href="#conteudo" onClick={(e) => onScroll(e, '#conteudo')}>{t('hero.ctaGhost')}</a>
+          {/* <a className="btn btn--ghost" href="#conteudo" onClick={(e) => onScroll(e, '#conteudo')}>{t('hero.ctaGhost')}</a> */}
         </div>
       </div>
       <div className="hero__badge">{t('hero.badge')}</div>
